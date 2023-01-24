@@ -1,0 +1,137 @@
+html, body{
+    margin:0;    
+    background-color: #cdcdcd;
+}
+
+.form{
+    margin: 20px;
+    background-color: #e9e5e5;
+    padding: 20px;
+    height: auto;
+    box-shadow: 0 0 10px 5px darkgray;
+}
+#flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.left-right{
+    width: 45%;
+
+}
+.text{
+    font-size: xx-large;
+    font-weight: bold;
+    
+}
+.line{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.image{
+    width: 10%;
+}
+.form1{
+    border-bottom: 1px solid rgb(68, 67, 67);
+    width: 90%;
+    padding-top: 1px; 
+}
+#bNone{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+.form2{
+    border-bottom: 1px solid rgb(68, 67, 67);
+    width: 48%;
+    padding-top: 1px;
+}
+
+input{
+    height: 30px;
+    width: 96%;
+    border: none;
+    background-color: #e9e5e5;
+    padding-left: 10px;
+}
+label{
+    display: flex;
+    justify-content: start;
+}
+label>input{
+    width: 10%;
+}
+input#offers{
+    width: 15px;
+    height: 15px;
+}
+span{
+    padding-top: 2px;
+}
+select{
+    margin-top: 8px;
+    height: 30px;
+    width: 48%;
+    border: none;
+    background-color: #e9e5e5;
+    border-bottom: 1px solid rgb(68, 67, 67);
+}
+input[type=date]{
+    width: 45%;
+    margin-top: 7px;
+    border-bottom: 1px solid rgb(68, 67, 67);
+    font-size: larger;
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+input[type=submit]{
+    margin-top: 40px;
+    width: 20%;
+    margin-left: 76%;
+    height: 40px;
+    background-color: rgb(24, 143, 145);
+    font-size: x-large;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+@media(max-width:900px){
+    #flex{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .left-right{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form2{
+        width: 48%;
+    }
+    input[type=date]{
+        width: 47%;        
+    }
+}
+
+@media(max-width:600px){
+    #bNone{
+        flex-direction: column;
+    }
+    .form2{
+        width: 100%;
+    }
+    #s600{
+        flex-direction: column;
+    }
+    select{
+        width: 100%;
+    }
+    input[type=date]{
+        width: 100%;
+    }
+    input[type=submit]{
+        width: 40%;
+        margin-left: 56%;
+    }
+}

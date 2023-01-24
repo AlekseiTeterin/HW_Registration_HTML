@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "registration.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>23_04_2022 registration form</title>
+</head>
+<body>
+    <form action="" class="form" method="get">
+        <div id="flex">
+            <div class="left-right">
+                <div class="text">Registration form</div>
+                <div class="line">
+                    <div class="image"><img src="img/username.png" height="32px" alt="user"></div>
+                    <div class="form1"><input type="text" name="username" placeholder="Username"></div>
+                </div>
+                <div class="line">
+                    <div class="image"><img src="img/email.png" height="32px" alt="email"></div>
+                    <div class="form1"><input type="email" name="e-mail" placeholder="Email address"></div>
+                </div>
+                <div class="line">
+                    <div class="image"><img src="img/username.png" height="32px" alt="user"></div>
+                    <div class="form1" id="bNone">
+                        <div class="form2"><input type="text" name="pswrd" placeholder="Password"></div>
+                        <div class="form2"><input type="text" name="conf-pswrd" placeholder="Confirm password"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="left-right">
+                <div class="text">Personal details</div>
+                <div class="line" id="s600">
+                    <div class="form2"><input type="text" name="fName" placeholder="First name"></div>
+                    <div class="form2"><input type="text" name="lName" placeholder="Last name"></div>
+                </div>
+                <div class="line" id="s600">
+                    <select name="select">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option> 
+                    </select>
+                    <input type="date" name="date">
+                </div>
+            </div>
+        </div>
+        <div>
+            <label for="offers">
+                    <input type="checkbox" id="offers" name="agreement">
+                    <span>I want to receive news and special offers</span>
+            </label>
+            <label for="offers">
+                <input type="checkbox" id="offers" name="agreement">
+                <span>I agree with the terms and Conditions</span>
+            </label>   
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
